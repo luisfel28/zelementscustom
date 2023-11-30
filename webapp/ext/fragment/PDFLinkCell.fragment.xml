@@ -1,0 +1,15 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+<Button 
+icon="sap-icon://pdf-attachment" 
+visible="{= ${inv_ref_num} !== 'inv_ref_num_6' ? true : false }"
+press="onPress"
+text="Fatura"
+tooltip="Ver PDF Fatura {inv_ref_num}" 
+/>
+<!--  			<Link
+				text="Ver Fatura {inv_ref_num}"
+                visible="{= ${inv_ref_num} !== 'inv_ref_num_6' ? true : false }"
+				target="_blank"
+				href="https://devre.fidelidademundial.com:44300/sap/opu/odata/SAP/ZRE_GW_FAT_INT_UPLOADS_SRV/ZENT_UPLOADSet('{inv_ref_num}')/$value">
+                </Link> -->
+</core:FragmentDefinition>
